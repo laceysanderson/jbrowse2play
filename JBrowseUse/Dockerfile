@@ -15,4 +15,6 @@ RUN npm install -g @gmod/jbrowse-cli \
 
 RUN jbrowse create jbrowse2
 
+WORKDIR /var/www/html/jbrowse2
+
 EXPOSE 80 5432
