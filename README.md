@@ -1,6 +1,6 @@
 # JBrowse2play
 
-Docker containers for playing with JBrowse2 both within the context of Tripal and idependantly.
+Docker containers for playing with JBrowse2 both within the context of Tripal and independantly.
 
 Three dockerfiles are provided for different purposes:
 1. JBrowseUse: The simplest image simply provides a place to play with JBrowse2. It contains a JBrowse site initialized using the JBrowse-cli. 
