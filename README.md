@@ -7,4 +7,9 @@ Three dockerfiles are provided for different purposes:
 2. JBrowseDev: This image is for development of JBrowse core and includes a clone of the core jbrowse-components.
 3. TripalJBrowseEmbed: Includes both a seeded Tripal site (credit: statonlab) and a JBrowse site initialized using the JBrowse-cli.
 
-**All the above dockers contain an Apache Httpd server, nodejs 10.x and the JBrowse Cli-tools. For docker-specific instructions check out the README.**
+## Current Status (2021Mar22)
+
+ - JBrowseUse is on the most recent vesion of JBrowse2 (v1.0.4) and is now using Alpine Linux + Node.js 14.16.0 for a secure production environment.
+ - JBrowseDev + TripalJBrowseEmbed are behind and need to be re-tested and updated. However, re-building the image should proviude you with a recent version of JBrowse since it uses the cli tools.
+ - Working to provide solid images for use so you don't need to build your own.
+ - Embedding is a proof of concept model for Tripal JBrowse and is not yet complete.
