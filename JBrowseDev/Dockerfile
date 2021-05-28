@@ -6,13 +6,13 @@ USER root
 
 WORKDIR /var/www
 
-RUN curl -sL https://rpm.nodesource.com/setup_10.x | bash - \
+RUN curl -sL https://rpm.nodesource.com/setup_14.x | bash - \
   && yum install nodejs -y \
   && yum install git -y \
   && npm install -g yarn \
   && node --version && npm --version && yarn --version
 
-RUN npm install -g @gmod/jbrowse-cli \
+RUN npm install -g @jbrowse/cli \
   && jbrowse --version
 
 RUN git clone https://github.com/GMOD/jbrowse-components.git \

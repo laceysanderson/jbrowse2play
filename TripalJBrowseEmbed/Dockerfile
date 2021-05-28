@@ -6,11 +6,11 @@ MAINTAINER Lacey-Anne Sanderson <laceyannesanderson@gmail.com>
 
 WORKDIR /var/www/html/sites/all
 
-RUN curl -sL https://rpm.nodesource.com/setup_10.x | sudo bash - \
+RUN curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash - \
   && sudo yum install nodejs -y \
   && node --version && npm --version
 
-RUN npm install -g @gmod/jbrowse-cli \
+RUN npm install -g @jbrowse/cli \
   && jbrowse --version
 
 RUN mkdir tools && jbrowse create tools/jbrowse2

@@ -9,7 +9,7 @@ To run the image:
 ```
 $ docker run -itd -p 8070:8080 -p 3000:3000 --name devJBrowse jbrowse2play:jbrowse-dev
 
-$ docker exec -it --workdir /var/www/jbrowse-components/packages/jbrowse-web devJBrowse yarn start
+$ docker exec -it --workdir /var/www/jbrowse-components/products/jbrowse-web devJBrowse yarn start
 ```
 
 You can now access the following locations in your browser:
