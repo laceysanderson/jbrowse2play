@@ -6,7 +6,7 @@ USER root
 
 WORKDIR /
 
-RUN npm install -g @gmod/jbrowse-cli \
+RUN npm install -g @jbrowse/cli \
   && jbrowse --version
 
 RUN jbrowse create jbrowse2
